@@ -452,7 +452,7 @@ nav .container .main-lists > li:after {
   transition: 0.3s;
 }
 
-nav .container .main-lists > li:hover:after {
+nav .container .main-lists > li:hover:after, nav .container .main-lists > li.active:after {
   width: 70%;
 }
 
@@ -834,19 +834,15 @@ footer .container .row:last-of-type form .input-container {
 footer .container .row:last-of-type form input {
   padding: 10px;
   width: 100%;
+  border: 1px solid var(--text-color);
 }
 
 footer .container .row:last-of-type form button {
   font-size: 14px;
   letter-spacing: 1px;
   padding: 5px 10px;
-  color: var(--text-color);
+  color: #fff;
   background: green;
-}
-
-footer .container .row:last-of-type form label {
-  padding: 10px;
-  border: 1px solid var(--text-color);
 }
 
 footer .container .row:last-of-type .social {
@@ -872,6 +868,7 @@ footer .container .row:last-of-type .social .icon {
   font-size: 16px;
   background: #1877f2;
   border-radius: 3px;
+  color: #fff !important;
 }
 
 footer .container .row:last-of-type .social .content {

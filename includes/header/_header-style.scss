@@ -210,7 +210,8 @@ nav {
           transition: 0.3s;
         }
 
-        &:hover {
+        &:hover,
+        &.active {
           &:after {
             width: 70%;
           }
@@ -545,19 +546,15 @@ footer {
           input {
             padding: 10px;
             width: 100%;
+            border: 1px solid var(--text-color);
           }
 
           button {
             font-size: 14px;
             letter-spacing: 1px;
             padding: 5px 10px;
-            color: var(--text-color);
+            color: #fff;
             background: green;
-          }
-
-          label {
-            padding: 10px;
-            border: 1px solid var(--text-color);
           }
         }
 
@@ -574,6 +571,7 @@ footer {
             font-size: 16px;
             background: #1877f2;
             border-radius: 3px;
+            color: #fff !important;
           }
 
           .content {
