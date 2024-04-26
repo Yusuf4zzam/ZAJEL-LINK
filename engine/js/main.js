@@ -65,15 +65,12 @@ window.addEventListener("click", (e) => {
   }
 });
 
-/* -------------------------------------- Testmonials Carousal Toggler  -------------------------------------- */
-let testmonialsBox = $$(".testmonials .box");
-let testmonialsBullets = $$(".testmonials ul li");
+/* -------------------------------------- Start The intlTelInput Library  -------------------------------------- */
+let input = $("#phone-number");
 
-testmonialsBullets.forEach((e) => {
-  e.addEventListener("click", (e) => {
-    testmonialsBullets.forEach((e) => e.classList.remove("active"));
-    testmonialsBox.forEach((e) => e.classList.remove("active"));
-    e.currentTarget.classList.add("active");
-    testmonialsBox[e.currentTarget.dataset.index].classList.add("active");
-  });
+window.intlTelInput(input, {
+  separateDialCode: true,
 });
+
+/* -------------------------------------- Start The Animation On Scroll Library  -------------------------------------- */
+AOS.init();

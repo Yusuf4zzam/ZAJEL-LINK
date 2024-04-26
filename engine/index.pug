@@ -6,7 +6,8 @@ html
         meta(name="description", content="We Provide An Engine What Can Do Shorten Whatsapp Number With Link")
         meta(name="keywords", content="Short, Short Whats, Whats App")
         title  Shorten Whatsapp Number With Link | Start Whatsapp Chat
-        link(rel="stylesheet", href="fontawesome/css/all.min.css")
+        link(rel="stylesheet", href="css/intlTelInput.min.css")
+        link(rel="stylesheet", href="../fontawesome/css/all.min.css")
         link(rel="stylesheet", href="css/main.css")
         link(rel="icon" href="../images/favicon.png")
         link(rel="apple-touch-icon", href="../images/favicon.png")
@@ -81,16 +82,13 @@ html
                     //- ---------------------- Start Lists Box ---------------------- -//
                     ul.main-lists
                         li.active
-                            a(href="#") Home
+                            a(href="../index.html") Home
 
                         li
                             a(href="index.html#about-us") about
 
                         li
                             a(href="index.html#about-us") Pricing
-
-                        li
-                            a(href="./engine/index.html") Product
 
                         li.drop-down-btn Documents 
                             i.fas.fa-chevron-down
@@ -118,117 +116,17 @@ html
                         span
                         span
 
-        //- ------------------- Start Slider Box ------------------- -//
+
         section.slider 
             .container 
-                .content-box 
-                    h2 Welcome to Canvas.
-                        br
-                        |MultiPurpose Template.
-
-                    span 
-
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum earum harum. Quia odit est accusamus eius? Perspiciatis voluptas blanditiis temporibus fugit veniam cumque consequatur explicabo adipisci necessitatibus, est quam.
-
-                .img-box
-                    img(src="images/slider.jpg", alt="Image")
-
-        //- ------------------- Start Service Box ------------------- -//
-        section.service
-            .container 
-                .box
-                    .icon
-                        i(class="fa-solid fa-display")
-                    span Scalable on Devices
-                    h3 Responsive &amp; Retina
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae temporibus alias repudiandae voluptates aperiam, expedita cum! Animi repudiandae ipsam magni in deleniti ullam numquam, est rem ut ea soluta.
-                .box
-                    .icon
-                        i(class="fa-solid fa-bolt-lightning")
-                    span Samrtly Coded &amp; Maintained
-                    h3 Powerfull Performance
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae temporibus alias repudiandae voluptates aperiam, expedita cum! Animi repudiandae ipsam magni in deleniti ullam numquam, est rem ut ea soluta.
-                .box
-                    .icon
-                        i(class="fa-solid fa-sliders")
-                    span Flexable &amp; Custmizable
-                    h3 Truly Mutli-Purpose
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae temporibus alias repudiandae voluptates aperiam, expedita cum! Animi repudiandae ipsam magni in deleniti ullam numquam, est rem ut ea soluta.
-
-        //- ------------------- Start Demos Box ------------------- -//
-        .demos 
-            .container 
-                .img-box
-                    img(src="images/drawing.jpg", alt="Demos Image")
-
-                .video-box 
-                    span Easily Understand &amp; Custmoizable 
-                    h3 Walkthrough Videos &amp; Demos 
-
-                    .img 
-                        img(src="images/code.jpg", alt="Video")
-                        .icon
-                            i(class="fa-solid fa-play")
-
-                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cupiditate, modi, molestiae facere magnam fugiat odio aliquam et fuga perferendis excepturi asperiores consectetur quis, ullam vel quae distinctio ipsam beatae. Harum ea, maiores veniam soluta sit aut doloremque? Qui, eius.
-        
-        //- ------------------- Start Count Box ------------------- -//
-        .count 
-            .container 
-                .box 
-                    <i class="fa-solid fa-font-awesome"></i>
-                    h4 864K
-                    p Lines Of Codes
-                .box 
-                    <i class="fa-regular fa-file"></i>
-                    h4 21500
-                    p kbs of html files
-                .box 
-                    <i class="fa-solid fa-layer-group"></i>
-                    h4 408
-                    p NO. Of Templates
-                .box 
-                    <i class="fa-regular fa-clock"></i>
-                    h4 1400
-                    p Hours Of Coding
-
-        //- ------------------- Start Count Box ------------------- -//
-        .testmonials 
-            .container 
-                .heading 
-                    h3 What Client Say?
-
-                .content
-                    .box.active
-                        .img-icon 
-                            img(src="images/av-01.jpg", alt="Avatar")
-                        
-                        .content-box 
-                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi iusto quasi a in nobis optio placeat ipsa officiis deleniti.
-                            span.name Carl Idward
-                            span XYZ Inc.
-                    .box 
-                        .img-icon 
-                            img(src="images/av-02.jpg", alt="Avatar")
-                        
-                        .content-box 
-                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi iusto quasi a in nobis optio placeat ipsa officiis deleniti.
-                            span.name Tom Deric
-                            span XYZ Inc.
-                    .box 
-                        .img-icon 
-                            img(src="images/av-03.jpg", alt="Avatar")
-                        
-                        .content-box 
-                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi iusto quasi a in nobis optio placeat ipsa officiis deleniti.
-                            span.name John Doe
-                            span XYZ Inc.
+                .form-box 
+                    form(action="" auto-compelte="off") 
+                        label(for="phone-number") Mobile Number
+                        input#phone-number(type="tel", name="PhoneNumber" placeholder="Type Your Phone")
+                        p We'll never share your mobile number with anyone else.
+                        button Short Now
 
 
-                ul
-                    li(data-index="0").active
-                    li(data-index="1")
-                    li(data-index="2")
         footer
             .container 
                 .row 
@@ -328,6 +226,7 @@ html
                                     h6 Subscribe 
                                     span to RSS Feeds 
 
+        
         .copy-right 
             .container
                 p &copy; Copyright 
@@ -341,5 +240,6 @@ html
                 span | 
                 a(href="#") Terms of Use
 
-        script(src="fontawesome/js/all.min.js")
+        script(src="../fontawesome/js/all.min.js")
+        script(src="js/intlTelInput.min.js") 
         script(src="js/main.js") 

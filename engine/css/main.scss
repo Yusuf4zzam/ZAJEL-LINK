@@ -1,0 +1,66 @@
+@import "../../includes//global-rules/global-rules";
+@import "../../includes//header/header-style";
+
+/* ------------------- Start Slider Box -------------------*/
+.slider {
+  height: 100vh;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/hero-bg.jpg) center top no-repeat;
+  background-size: cover;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 7px;
+    }
+
+    .iti {
+      font-size: 14px;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 3px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      border: 1px solid transparent;
+      transition: 0.3s;
+      width: 300px;
+
+      &:focus {
+        border: 1px solid var(--text-color);
+      }
+    }
+
+    button {
+      background: seagreen;
+      color: var(--text-color);
+      height: 50px;
+      width: 150px;
+      border-radius: 3px;
+      margin-top: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  padding: 50px 0;
+}

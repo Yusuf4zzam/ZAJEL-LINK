@@ -1,149 +1,301 @@
-@import "./global-rules";
-@import "./responsive";
+@import "../includes//global-rules/global-rules";
+@import "../includes//header/header-style";
 
-/* ------------------- Start Header Box -------------------*/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
-  backdrop-filter: blur(10px);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+/* ------------------------  Start Slider Box ------------------------*/
+.slider {
+  padding: 50px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .content-box {
+      color: var(--text-color);
+      width: 50%;
 
-  &.active {
-    background: linear-gradient(left, $bg-color, $primary-color);
+      h2 {
+        font-size: 42px;
+      }
+
+      span {
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: var(--text-color);
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    .img-box {
+      width: calc(50% - 30px);
+      img {
+        max-width: 100%;
+      }
+    }
   }
+}
+
+@media (max-width: 991px) {
+  .slider {
+    .container {
+      .content-box,
+      .img-box {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    .container {
+      .content-box {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------  Start Service Box ------------------------*/
+.service {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    color: var(--text-color);
+    text-align: center;
+
+    .box {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 5px;
+
+      .icon {
+        font-size: 35px;
+        margin-bottom: 15px;
+        color: var(--heading-color);
+      }
+      span {
+        font-size: 13px;
+      }
+
+      h3 {
+        font-size: 25px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+/* ------------------------  Start Demos Box ------------------------*/
+.demos {
+  padding: 50px 0;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
+  }
 
-    // Start Logo Box
-    .logo-box {
-      a {
-        display: inline-block;
-        color: $light-text-color;
-        font-size: 32px;
-        font-family: "Tajawal", sans-serif;
-        font-weight: 300;
-        letter-spacing: 3px;
-      }
-    }
-
-    nav {
-      > ul {
-        display: flex;
-        gap: 30px;
-        font-size: 15px;
-
-        li ul a {
-          color: $dark-text-color;
-        }
-
-        > li,
-        a {
-          position: relative;
-          color: rgba(255, 255, 255, 0.8);
-          transition: 0.3s;
-          cursor: pointer;
-
-          &:after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: -7px;
-            transform: translateX(-50%);
-            width: 0;
-            height: 3px;
-            border-radius: 3px;
-            background: $light-text-color;
-            transition: 0.3s;
-          }
-
-          &:hover {
-            color: $light-text-color;
-            &:after {
-              width: 90%;
-            }
-          }
-        }
-      }
+  .img-box {
+    width: 40%;
+    img {
+      max-width: 100%;
     }
   }
-}
 
-/* ------------------- Start Slider Box -------------------*/
-.slider {
-  height: 100vh;
-
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .video-box {
+    width: calc(60% - 30px);
     text-align: center;
+    color: var(--text-color);
+    span {
+      color: var(--heading-color);
+      font-size: 14px;
+    }
 
-    label {
-      display: block;
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 5px;
-      color: $light-text-color;
+    h3 {
+      margin: 10px 0 20px;
+      font-size: 30px;
+    }
+
+    .img {
+      position: relative;
+      text-align: center;
+      img {
+        width: 70%;
+        height: 200px;
+      }
+
+      .icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: var(--heading-color);
+        cursor: pointer;
+      }
     }
 
     p {
-      color: $light-text-color;
       font-size: 14px;
-      margin-top: 7px;
-    }
-
-    .iti {
-      font-size: 14px;
-    }
-
-    input {
-      padding: 10px;
-      border-radius: 3px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-      border: 1px solid transparent;
-      transition: 0.3s;
-      width: 300px;
-
-      &:focus {
-        border-color: $dark-text-color;
-      }
-    }
-
-    button {
-      background: #0d6efd;
-      color: $light-text-color;
-      height: 50px;
-      width: 150px;
-      border-radius: 3px;
+      line-height: 1.5;
       margin-top: 15px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      font-size: 18px;
-      cursor: pointer;
     }
   }
 }
 
-/* ------------------- Start footer Box -------------------*/
-footer {
-  background: $light-text-color;
-  text-align: center;
-  font-size: 15px;
-  padding: 20px 0;
-  p {
-    line-height: 1.5;
-    color: $dark-text-color;
-  }
+@media (max-width: 991px) {
+  .demos {
+    .img-box,
+    .video-box {
+      width: 100%;
+    }
 
-  a {
-    color: $primary-color;
+    .img-box {
+      order: 2;
+    }
+  }
+}
+
+/* ------------------------  Start Count Box ------------------------*/
+.count {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+
+    .box {
+      text-align: center;
+      padding: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      color: var(--text-color);
+
+      svg {
+        color: var(--heading-color);
+        font-size: 35px;
+      }
+
+      h4 {
+        font-size: 30px;
+        margin: 15px 0;
+      }
+
+      p {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+/* ------------------------  Start Testmonials Box ------------------------*/
+.testmonials {
+  position: relative;
+  height: 100vh;
+  margin: 50px 0;
+  padding: 50px 0;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.8)),
+    url(../images/tablet.jpg) center top no-repeat;
+  background-size: cover;
+
+  .container {
+    text-align: center;
+    .heading {
+      position: relative;
+      color: #fff;
+      font-size: 35px;
+      margin-bottom: 50px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 2px;
+        background: #fff;
+      }
+    }
+
+    .content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 40vh;
+
+      .box {
+        color: #fff;
+        position: absolute;
+        transform: scale(0);
+        opacity: 0;
+        transition: 0.5s;
+
+        &.active {
+          transform: scale(1);
+          opacity: 1;
+        }
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+
+        p {
+          width: 50%;
+          font-size: 14px;
+          line-height: 1.5;
+          margin: 15px auto;
+        }
+
+        span {
+          display: block;
+          line-height: 1.5;
+          font-size: 13px;
+
+          &.name {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    ul {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 30px;
+      li {
+        width: 50px;
+        height: 10px;
+        border: 1px solid var(--heading-color);
+        cursor: pointer;
+        transition: 0.5s;
+
+        &.active,
+        &:hover {
+          background: var(--heading-color);
+        }
+      }
+    }
   }
 }
