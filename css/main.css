@@ -1260,4 +1260,10 @@ footer .container .row:last-of-type .social .content h6 {
 .testmonials .container ul li.active, .testmonials .container ul li:hover {
   background: var(--heading-color);
 }
+
+@media (max-width: 767px) {
+  .testmonials .box p {
+    width: 100% !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

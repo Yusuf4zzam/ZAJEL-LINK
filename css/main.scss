@@ -299,3 +299,13 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .testmonials {
+    .box {
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+}
