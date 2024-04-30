@@ -22,7 +22,7 @@ header {
     background: var(--bg-color-transparent);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     .container {
-      padding: 15px;
+      padding: 5px 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -142,7 +142,7 @@ header {
 
 /* -------------------------------------- Start The nav Box -------------------------------------- */
 nav {
-  padding: 20px 0;
+  padding: 15px 0;
   user-select: none;
 
   .container {
@@ -155,11 +155,6 @@ nav {
       display: flex;
       align-items: center;
       gap: 30px;
-
-      &.active {
-        transform: translate(-50%, -50%) scale(1);
-        padding: 20px;
-      }
 
       > li {
         position: relative;
@@ -183,7 +178,7 @@ nav {
         ul {
           width: 220px;
           position: absolute;
-          top: 70px;
+          top: 60px;
           display: flex;
           flex-direction: column;
           gap: 15px;
@@ -338,7 +333,7 @@ nav {
       display: none;
 
       & {
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           display: block;
         }
       }
@@ -347,7 +342,7 @@ nav {
 }
 
 // Start Responsive Design For NavBar
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   nav {
     .container {
       .main-lists {
@@ -366,6 +361,11 @@ nav {
         transform: translate(-50%, -50%) scale(0);
         transition: 0.5s;
         z-index: 99999999;
+
+        &.active {
+          transform: translate(-50%, -50%) scale(1);
+          padding: 20px;
+        }
 
         > li {
           font-size: 18px;

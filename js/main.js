@@ -77,3 +77,40 @@ testmonialsBullets.forEach((e) => {
     testmonialsBox[e.currentTarget.dataset.index].classList.add("active");
   });
 });
+
+/* -------------------------------------- Start The intlTelInput Library  -------------------------------------- */
+let input = $("#phone-number");
+
+window.intlTelInput(input, {
+  separateDialCode: true,
+});
+
+/* -------------------------------------- Start The Animation On Scroll Library  -------------------------------------- */
+AOS.init();
+
+/* -------------------------------------- Start The Counter Function  -------------------------------------- */
+let countBox = $(".count");
+
+let counterEl = $$(".count .box .nums");
+
+let countStarted = false;
+
+function numsCounter(e) {
+  let goal = e.dataset.index;
+
+  let count = setInterval(() => {
+    e.textContent++;
+
+    if (e.textContent == goal) clearInterval(count);
+  }, 4000 / goal);
+}
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= countBox.offsetTop - 300) {
+    if (!countStarted) {
+      counterEl.forEach((e) => numsCounter(e));
+    }
+
+    countStarted = true;
+  }
+});
