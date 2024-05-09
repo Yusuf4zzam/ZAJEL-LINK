@@ -2,6 +2,8 @@
 :root {
   --hue-1: 257;
   --hue-2: 47;
+  --margin: 100px 0;
+  --padding: 70px 0;
 }
 
 .overlay {
@@ -691,7 +693,7 @@ nav .container .burger-toggler {
 
 /* ------------------------  Start Footer Box ------------------------*/
 footer {
-  padding: 50px;
+  padding: var(--padding);
   background: #171627;
   color: #fff;
 }
@@ -829,7 +831,7 @@ footer .container .row:nth-child(3) .content span {
 }
 
 footer .container .row:last-of-type {
-  width: calc(40% - 90px);
+  width: calc(45% - 90px);
 }
 
 footer .container .row:last-of-type .head {
@@ -1086,9 +1088,15 @@ footer .container .row:last-of-type .social .content h6 {
   }
 }
 
+@media (max-width: 530px) {
+  .slider h1 {
+    font-size: 30px;
+  }
+}
+
 /* ------------------------  Start welcome Box ------------------------*/
 .welcome {
-  padding: 70px 0;
+  margin: var(--margin);
 }
 
 .welcome .container {
@@ -1189,7 +1197,7 @@ footer .container .row:last-of-type .social .content h6 {
 
 /* ------------------------  Start Demos Box ------------------------*/
 .demos {
-  padding: 70px 0;
+  margin: var(--margin);
 }
 
 .demos .container {
@@ -1305,7 +1313,7 @@ footer .container .row:last-of-type .social .content h6 {
 
 .count .container .box h4 {
   font-size: 30px;
-  margin: 20px 0 5px;
+  margin: 20px 0 0;
 }
 
 .count .container .box p {
@@ -1317,8 +1325,8 @@ footer .container .row:last-of-type .social .content h6 {
 .testmonials {
   position: relative;
   height: 100vh;
-  margin: 70px 0;
-  padding: 50px 0;
+  margin: var(--margin);
+  padding: var(--padding);
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(../images/tablet.jpg) center top no-repeat;
   background: linear-gradient(left, rgba(0, 0, 0, 0.8)), url(../images/tablet.jpg) center top no-repeat;
   background-size: cover;
@@ -1425,6 +1433,12 @@ footer .container .row:last-of-type .social .content h6 {
 @media (max-width: 767px) {
   .testmonials .box p {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .testmonials h3 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */

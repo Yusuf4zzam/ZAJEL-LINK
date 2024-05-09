@@ -100,9 +100,15 @@
   }
 }
 
+@media (max-width: 530px) {
+  .slider h1 {
+    font-size: 30px;
+  }
+}
+
 /* ------------------------  Start welcome Box ------------------------*/
 .welcome {
-  padding: 70px 0;
+  margin: var(--margin);
   .container {
     display: flex;
     align-items: center;
@@ -201,7 +207,7 @@
 
 /* ------------------------  Start Demos Box ------------------------*/
 .demos {
-  padding: 70px 0;
+  margin: var(--margin);
 
   .container {
     display: flex;
@@ -305,7 +311,7 @@
 
       h4 {
         font-size: 30px;
-        margin: 20px 0 5px;
+        margin: 20px 0 0;
       }
 
       p {
@@ -320,8 +326,8 @@
 .testmonials {
   position: relative;
   height: 100vh;
-  margin: 70px 0;
-  padding: 50px 0;
+  margin: var(--margin);
+  padding: var(--padding);
   background: linear-gradient(left, rgba(0, 0, 0, 0.8)),
     url(../images/tablet.jpg) center top no-repeat;
   background-size: cover;
@@ -417,6 +423,14 @@
       p {
         width: 100% !important;
       }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .testmonials {
+    h3 {
+      font-size: 30px;
     }
   }
 }

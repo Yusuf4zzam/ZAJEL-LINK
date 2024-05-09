@@ -378,7 +378,7 @@ nav {
 
 /* ------------------------  Start Footer Box ------------------------*/
 footer {
-  padding: 50px;
+  padding: var(--padding);
   background: #171627;
   color: #fff;
   .container {
@@ -486,7 +486,7 @@ footer {
       }
 
       &:last-of-type {
-        width: calc(40% - 90px);
+        width: calc(45% - 90px);
         .head {
           display: flex;
           flex-wrap: wrap;
