@@ -2,7 +2,7 @@ doctype html
 html
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
         meta(name="description", content="We Provide An Engine What Can Do Shorten Whatsapp Number With Link")
         meta(name="keywords", content="Short, Short Whats, Whats App")
         title  Shorten Whatsapp Number With Link | Start Whatsapp Chat
@@ -13,6 +13,9 @@ html
         link(rel="icon" href="../images/favicon.png")
         link(rel="apple-touch-icon", href="../images/favicon.png")
     body
+        //- ---------------------- Start Loader Box ---------------------- -//
+        .loader 
+            div
         //- ---------------------- Start Scroll Up Box ---------------------- -//
         .scroll-up 
             i.fas.fa-arrow-up
@@ -29,43 +32,14 @@ html
                     //- ---------------------- Start left-box Box ---------------------- -//
                     .left-box 
                         a(href="mailto:info@remah.tech" target="_blank")
+                            |تواصل معنا عبر الأيميل
                             i.far.fa-envelope
-                            |info@remah.tech
                         a(href="https://wa.me/01202434910" target="_blank")
+                            |الدعم المباشر
                             i.far.fa-clock
-                            |Live Support
 
                     //- ---------------------- Start right-box Box ---------------------- -//
                     .right-box 
-
-                        //- ---------------------- Start left-box Box ---------------------- -//
-                        .lang 
-                            ul
-                                li.drop-down-btn
-                                    img(src="includes/images/w1.png", alt="flag")
-                                    |English
-                                    i.fas.fa-chevron-down
-
-                                    ul
-                                        li
-                                            a(href="")
-                                                img(src="includes/images/w2.png", alt="flag")
-                                                |Deutsch
-
-                                        li
-                                            a(href="")
-                                                img(src="includes/images/w3.png", alt="flag")
-                                                |Español
-
-                                        li
-                                            a(href="")
-                                                img(src="includes/images/w4.png", alt="flag")
-                                                |Français
-
-                                        li
-                                            a(href="")
-                                                img(src="includes/images/w5.png", alt="flag")
-                                                |العربية
 
                         //- ---------------------- Start toggler Box ---------------------- -//
                         .toggler
@@ -73,36 +47,32 @@ html
 
             //- ---------------------- Start Nav Box ---------------------- -//
             nav
-                .container 
+                .container
 
-                    //- ---------------------- Start logo Box ---------------------- -//
-                    .logo
-                        h1
-                            a(href="#") ZAJEL LINK
 
                     //- ---------------------- Start Lists Box ---------------------- -//
                     ul.main-lists
                         li.active
-                            a(href="#") Home
+                            a(href="#") الصفحة الرئيسية
 
                         li
-                            a(href="index.html#about-us") about
+                            a(href="index.html#about-us") معلومات عنا
 
                         li
-                            a(href="index.html#about-us") Pricing
+                            a(href="index.html#about-us") الأسعار
 
-                        li.drop-down-btn Documents 
+                        li.drop-down-btn صفحات اخرى 
                             i.fas.fa-chevron-down
 
                             ul
                                 li
-                                    a(href="games/index.html") faq
+                                    a(href="games/index.html") الأسئلة
                                 li
-                                    a(href="faq/index.html") Blog	
+                                    a(href="faq/index.html") المدونات	
 
 
                         li
-                            a(href="#contact") Contact
+                            a(href="#contact") اتصل بنا
 
 
                     //- ---------------------- Start Burger Icon Box ---------------------- -//
@@ -117,27 +87,66 @@ html
                         span
                         span
 
+                    //- ---------------------- Start left-box Box ---------------------- -//
+                    .lang 
+                        ul
+                            li.drop-down-btn
+                                img(src="includes/images/w5.png", alt="flag")
+                                |العربية
+                                i.fas.fa-chevron-down
+
+                                ul
+                                    li
+                                        a(href="")
+                                            img(src="includes/images/w1.png", alt="flag")
+                                            |English
+
+                                    li
+                                        a(href="")
+                                            img(src="includes/images/w2.png", alt="flag")
+                                            |Deutsch
+
+                                    li
+                                        a(href="")
+                                            img(src="includes/images/w3.png", alt="flag")
+                                            |Español
+
+                                    li
+                                        a(href="")
+                                            img(src="includes/images/w4.png", alt="flag")
+                                            |Français
+
+
         //- ------------------- Start Slider Box ------------------- -//
         section.slider
-            .container 
-                .form-box(data-aos="zoom-in")
-                    form(action="" auto-compelte="off") 
-                        label(for="phone-number") Mobile Number
-                        input#phone-number(type="tel", name="PhoneNumber" placeholder="Type Your Phone")
-                        p We'll never share your mobile number with anyone else.
-                        button Short Now
+            .container
+                .content-container
+                    .logo 
+                        a(href="#")
+                            h1 
+                                span Z
+                                |AJEL 
+                                span L
+                                |INK
+
+                    .form-box(data-aos="zoom-in")
+                        form(action="" auto-compelte="off") 
+                            label(for="phone-number") رقم الهاتف
+                            input#phone-number(type="tel", name="PhoneNumber" placeholder="Type Your Phone")
+                            p لن نشارك رقم هاتفك المحمول أبدًا مع أي شخص آخر.
+                            button اختصرها الآن
 
         //- ------------------- Start welcome Box ------------------- -//
         section.welcome 
-            .container 
+            .container
                 .content-box(data-aos="fade-right")
-                    h2 Welcome to Canvas.
+                    h2 مرحباً بك في كانفاس.
                         br
-                        |MultiPurpose Template.
+                        |قالب متعدد الأغراض.
 
                     span 
 
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum earum harum. Quia odit est accusamus eius? Perspiciatis voluptas blanditiis temporibus fugit veniam cumque consequatur explicabo adipisci necessitatibus, est quam.
+                    p الشركة نفسها هي شركة ناجحة جدا. أعطته واحدة من هذه. لأنه يكرهه نتهمه؟ عندما ترى أن لذة التملق تفلت من العصر، سأشرح لك العواقب وضرورات الحصول عليها، هكذا.
 
                 .img-box(data-aos="fade-left")
                     img(src="images/slider.jpg", alt="Image")
@@ -148,21 +157,21 @@ html
                 .box(data-aos="flip-left")
                     .icon
                         i(class="fa-solid fa-display")
-                    span Scalable on Devices
-                    h3 Responsive &amp; Retina
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae temporibus alias repudiandae voluptates aperiam, expedita cum! Animi repudiandae ipsam magni in deleniti ullam numquam, est rem ut ea soluta.
+                    span قابلة للتطوير على الأجهزة
+                    h3 استجابة وشبكية العين
+                    P الشركة نفسها هي شركة ناجحة جدا. سأشرح أنه بالرغبة والأخلاق والمتاعب، دعه يهرب بكراهية كبيرة، وبالهروب سينقذ الملاحقات الأشد، لأي شخص أو أي تمييز للمبارك نفسه. ومن بين هؤلاء هل يجب تحرير الوالدين من المغفرة أو الألم؟ من له
                 .box(data-aos="flip-left")
                     .icon
                         i(class="fa-solid fa-bolt-lightning")
-                    span Samrtly Coded &amp; Maintained
-                    h3 Powerfull Performance
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae temporibus alias repudiandae voluptates aperiam, expedita cum! Animi repudiandae ipsam magni in deleniti ullam numquam, est rem ut ea soluta.
+                    span مطلي بذكاء وصيانته
+                    h3 أداء قوي
+                    P الشركة نفسها هي شركة ناجحة جدا. سأشرح أنه بالرغبة والأخلاق والمتاعب، دعه يهرب بكراهية كبيرة، وبالهروب سينقذ الملاحقات الأشد، لأي شخص أو أي تمييز للمبارك نفسه. ومن بين هؤلاء هل يجب تحرير الوالدين من المغفرة أو الألم؟ من له
                 .box(data-aos="flip-left")
                     .icon
                         i(class="fa-solid fa-sliders")
-                    span Flexable &amp; Custmizable
-                    h3 Truly Mutli-Purpose
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae temporibus alias repudiandae voluptates aperiam, expedita cum! Animi repudiandae ipsam magni in deleniti ullam numquam, est rem ut ea soluta.
+                    span مرنة وقابلة للتخصيص
+                    h3 متعدد الأغراض حقًا
+                    P الشركة نفسها هي شركة ناجحة جدا. سأشرح أنه بالرغبة والأخلاق والمتاعب، دعه يهرب بكراهية كبيرة، وبالهروب سينقذ الملاحقات الأشد، لأي شخص أو أي تمييز للمبارك نفسه. ومن بين هؤلاء هل يجب تحرير الوالدين من المغفرة أو الألم؟ من له
 
         //- ------------------- Start Demos Box ------------------- -//
         .demos 
@@ -171,41 +180,41 @@ html
                     img(src="images/drawing.jpg", alt="Demos Image")
 
                 .video-box(data-aos="zoom-in")
-                    span Easily Understand &amp; Custmoizable 
-                    h3 Walkthrough Videos &amp; Demos 
+                    span فهم بسهولة وقابلة للتخصيص
+                    h3 مقاطع فيديو وعروض توضيحية
 
-                    .img 
-                        img(src="images/code.jpg", alt="Video")
-                        .icon
-                            i(class="fa-solid fa-play")
+                    .img
+                        .img-container
+                            img(src="images/code.jpg", alt="Video")
+                            .icon
+                                i(class="fa-solid fa-play")
 
-                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cupiditate, modi, molestiae facere magnam fugiat odio aliquam et fuga perferendis excepturi asperiores consectetur quis, ullam vel quae distinctio ipsam beatae. Harum ea, maiores veniam soluta sit aut doloremque? Qui, eius.
-        
+                        P الشركة نفسها هي شركة ناجحة جدا. سأشرح أنه بالرغبة والأخلاق والمتاعب، دعه يهرب بكراهية كبيرة، وبالهروب سينقذ الملاحقات الأشد، لأي شخص أو أي تمييز للمبارك نفسه. ومن بين هؤلاء هل يجب تحرير الوالدين من المغفرة أو الألم؟ من له
         //- ------------------- Start Count Box ------------------- -//
         .count 
             .container 
                 .box 
                     <i class="fa-solid fa-font-awesome"></i>
                     h4.nums(data-index="864") 0
-                    p Lines Of Codes
+                    p عدد الأسطر
                 .box 
                     <i class="fa-regular fa-file"></i>
                     h4.nums(data-index="2150") 0
-                    p kbs of html files
+                    p حجم ملفات الـ HTML
                 .box 
                     <i class="fa-solid fa-layer-group"></i>
                     h4.nums(data-index="408") 0
-                    p NO. Of Templates
+                    p عدد من القوالب
                 .box 
                     <i class="fa-regular fa-clock"></i>
                     h4.nums(data-index="1400") 0
-                    p Hours Of Coding
+                    p ساعات من البرمجة
 
         //- ------------------- Start Count Box ------------------- -//
         .testmonials(data-aos="fade-up")
             .container 
                 .heading 
-                    h3 What Client Say?
+                    h3 ماذا يقول العميل؟
 
                 .content
                     .box.active
@@ -242,76 +251,75 @@ html
             .container 
                 .row 
                     .logo
-                        h1
+                        h3
                             a(href="#") ZAJEL LINK
 
-                    p We believe Simple, Creative &amp; Flexable Design Standards.
+                    p نحن نؤمن بمعايير التصميم البسيطة والإبداعية والمرنة.
 
                     .content
                         div 
-                            h5 Headquarters:
-                            p 795 Folsom Ave, Suite 600 San Francisco, CA 94107
+                            h5 المقر:
+                            p 795 شارع فولسوم، جناح 600 سان فرانسيسكو، كاليفورنيا 94107:
 
                         div.contact
                             p
-                                b Phone: 
+                                b رقم الهاتف: 
                                 |(1) 8547 632521
 
                             p
-                                b Fax: 
+                                b فاكس: 
                                 |(1) 11 4752 1433
 
                             p
-                                b Email: 
+                                b ايميل: 
                                 |info@remah.tech
 
                 .row 
-                    h3 Blogroll 
+                    h3 قائمة المدونات 
                     
                     ul
                         li
-                            a(href="") Documntation
+                            a(href="") توثيق
                         li
-                            a(href="") Feedback
+                            a(href="") تعليق
                         li
-                            a(href="") Plugins
+                            a(href="") الإضافات
                         li
-                            a(href="") Support Forums
+                            a(href="") منتديات الدعم
                         li
-                            a(href="") Themes
+                            a(href="") المواضيع
                         li
-                            a(href="") Canvas Blog
+                            a(href="") مدونة كانفاس
                         li
-                            a(href="") Canvas Planet
+                            a(href="") كوكب كانفاس
 
                 .row 
-                    h3 Recent Posts
+                    h3 المشاركات الاخيرة
                     
                     .content
                         div 
-                            p Lorem ipsum dolor sit amet consectetur.
-                            span 10th July 2021
+                            p لوريم إيبسوم دولور الجلوس أميت كونسيكتور.
+                            span 10 يوليو 2021
 
                         div 
-                            p Lorem ipsum dolor sit amet consectetur.
-                            span 10th July 2021
+                            p لوريم إيبسوم دولور الجلوس أميت كونسيكتور.
+                            span 10 يوليو 2021
 
                         div 
-                            p Lorem ipsum dolor sit amet consectetur.
-                            span 10th July 2021
+                            p لوريم إيبسوم دولور الجلوس أميت كونسيكتور.
+                            span 10 يوليو 2021
 
                 .row 
                     .head
                         .downloads 
                             h4 15,065,421
-                            p total downloads
+                            p إجمالي التنزيلات
                         .clients
                             h4 18,465
-                            p Clients
+                            p العملاء
                     
                     form(action="" autocompelete="off") 
-                        p Subscribe to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:
-
+                        p اشترك في النشرة الإخبارية لدينا للحصول على أخبار مهمة وعروض مذهلة داخل المجارف:
                         .input-container 
                             
                             input(type="text", name="" placeholder="Enter your Email")
@@ -325,8 +333,8 @@ html
                                     i(class="fa-brands fa-facebook-f")
                                 
                                 .text 
-                                    h6 Like Us 
-                                    span On Facebook 
+                                    h6 اعجب بنا  
+                                    span على الفيسبوك 
 
                         .content
                             a(href="#") 
@@ -334,21 +342,21 @@ html
                                     i(class="fa-solid fa-wifi")
                                 
                                 .text 
-                                    h6 Subscribe 
-                                    span to RSS Feeds 
+                                    h6 اشترك 
+                                    span إلى خلاصات RSS 
 
         .copy-right 
             .container
-                p &copy; Copyright 
+                p &copy; حقوق الطبع والنشر 
                     strong Remah Tech LLC
-                    |. All Rights Reserved
+                    |. كل الحقوق محفوظة
 
                 p  برمجة وتصميم وسيو بواسطة  
                     a(href="#") رماح الرقمية 
                 
-                a(href="#") Privacy Policy 
+                a(href="#") سياسة الخصوصية 
                 span | 
-                a(href="#") Terms of Use
+                a(href="#") شروط الاستخدام
 
         script(src="js/intlTelInput.min.js") 
         script(src="https://unpkg.com/aos@next/dist/aos.js")
